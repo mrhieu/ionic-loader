@@ -1,0 +1,62 @@
+:root {
+  /** primary **/
+  --ion-color-primary: #118bd8;
+  --ion-color-primary-rgb: 17,139,216;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255,255,255;
+  --ion-color-primary-shade: #0f7abe;
+  --ion-color-primary-tint: #2997dc;
+
+  --ion-text-color: #333;
+
+  /** Facebook **/
+  --ion-color-facebook: #4267b2;
+  --ion-color-facebook-rgb: 66,103,178;
+  --ion-color-facebook-contrast: #ffffff;
+  --ion-color-facebook-contrast-rgb: 255,255,255;
+  --ion-color-facebook-shade: #3a5b9d;
+  --ion-color-facebook-tint: #5576ba;
+
+  /** white **/
+  --ion-color-white: #ffffff;
+  --ion-color-white-rgb: 255,255,255;
+  --ion-color-white-contrast: #000000;
+  --ion-color-white-contrast-rgb: 0,0,0;
+  --ion-color-white-shade: #e0e0e0;
+  --ion-color-white-tint: #ffffff;
+
+  /** Pinterest **/
+  --ion-color-pinterest: #bd081c;
+  --ion-color-pinterest-rgb: 189,8,28;
+  --ion-color-pinterest-contrast: #ffffff;
+  --ion-color-pinterest-contrast-rgb: 255,255,255;
+  --ion-color-pinterest-shade: #a60719;
+  --ion-color-pinterest-tint: #c42133;
+}
+
+.ion-color-facebook {
+  --ion-color-base: var(--ion-color-facebook);
+  --ion-color-base-rgb: var(--ion-color-facebook-rgb);
+  --ion-color-contrast: var(--ion-color-facebook-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-facebook-contrast-rgb);
+  --ion-color-shade: var(--ion-color-facebook-shade);
+  --ion-color-tint: var(--ion-color-facebook-tint);
+}
+
+.ion-color-white {
+  --ion-color-base: var(--ion-color-white);
+  --ion-color-base-rgb: var(--ion-color-white-rgb);
+  --ion-color-contrast: var(--ion-color-white-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-white-contrast-rgb);
+  --ion-color-shade: var(--ion-color-white-shade);
+  --ion-color-tint: var(--ion-color-white-tint);
+}
+
+.ion-color-pinterest {
+  --ion-color-base: var(--ion-color-pinterest);
+  --ion-color-base-rgb: var(--ion-color-pinterest-rgb);
+  --ion-color-contrast: var(--ion-color-pinterest-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-pinterest-contrast-rgb);
+  --ion-color-shade: var(--ion-color-pinterest-shade);
+  --ion-color-tint: var(--ion-color-pinterest-tint);
+}

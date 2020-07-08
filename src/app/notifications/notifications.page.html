@@ -1,0 +1,83 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title>Notification</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item lines="none">
+      <ion-avatar slot="start">
+        <ion-skeleton-text></ion-skeleton-text>
+      </ion-avatar>
+      <ion-label>
+        <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+        <ion-skeleton-text animated class="skeleton-sm"></ion-skeleton-text>
+        <ion-skeleton-text animated class="skeleton-sm" style="width: 67%"></ion-skeleton-text>
+      </ion-label>
+      <ion-skeleton-text slot="end" style="width: 54px; height: 54px"></ion-skeleton-text>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-avatar slot="start" class="ion-align-self-start ion-margin-top">
+        <ion-skeleton-text></ion-skeleton-text>
+      </ion-avatar>
+      <ion-label>
+        <ion-skeleton-text animated></ion-skeleton-text>
+        <ion-row class="ion-justify-content-start">
+          <ion-col size="auto">
+            <ion-skeleton-text style="width: 54px; height: 54px"></ion-skeleton-text>
+          </ion-col>
+          <ion-col size="auto">
+            <ion-skeleton-text style="width: 54px; height: 54px"></ion-skeleton-text>
+          </ion-col>
+          <ion-col size="auto">
+            <ion-skeleton-text style="width: 54px; height: 54px"></ion-skeleton-text>
+          </ion-col>
+          <ion-col size="auto">
+            <ion-skeleton-text style="width: 54px; height: 54px"></ion-skeleton-text>
+          </ion-col>
+        </ion-row>
+      </ion-label>
+    </ion-item>
+
+    <ion-item lines="none" *ngFor="let i of [0,1,2]">
+      <ion-avatar slot="start">
+        <ion-skeleton-text></ion-skeleton-text>
+      </ion-avatar>
+      <ion-label>
+        <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+        <ion-skeleton-text animated class="skeleton-sm"></ion-skeleton-text>
+        <ion-skeleton-text animated class="skeleton-sm" style="width: 67%"></ion-skeleton-text>
+      </ion-label>
+      <ion-skeleton-text slot="end" style="width: 54px; height: 54px"></ion-skeleton-text>
+    </ion-item>
+
+    <ion-item lines="none" *ngFor="let i of [0,1]">
+      <ion-avatar slot="start" class="ion-align-self-start ion-margin-top">
+        <ion-skeleton-text></ion-skeleton-text>
+      </ion-avatar>
+      <ion-label>
+        <ion-skeleton-text animated></ion-skeleton-text>
+        <ion-row class="ion-justify-content-start">
+          <ion-col size="auto">
+            <ion-skeleton-text style="width: 54px; height: 54px"></ion-skeleton-text>
+          </ion-col>
+          <ion-col size="auto">
+            <ion-skeleton-text style="width: 54px; height: 54px"></ion-skeleton-text>
+          </ion-col>
+          <ion-col size="auto">
+            <ion-skeleton-text style="width: 54px; height: 54px"></ion-skeleton-text>
+          </ion-col>
+          <ion-col size="auto">
+            <ion-skeleton-text style="width: 54px; height: 54px"></ion-skeleton-text>
+          </ion-col>
+        </ion-row>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

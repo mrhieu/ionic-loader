@@ -1,0 +1,25 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title>Table</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row *ngFor="let i of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]">
+      <ion-col size="1">
+        <ion-skeleton-text animated style="width: 14px"></ion-skeleton-text>
+      </ion-col>
+      <ion-col size="6">
+        <ion-skeleton-text animated></ion-skeleton-text>
+      </ion-col>
+      <ion-col size="5">
+        <ion-skeleton-text animated></ion-skeleton-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

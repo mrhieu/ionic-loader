@@ -11,39 +11,43 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 })
 export class AppComponent implements OnInit {
   public selectedIndex = 0;
-  public appPages = [
+  public screenList = [
     {
-      title: 'Inbox',
-      url: '/folder/Inbox',
-      icon: 'mail'
+      title: 'Featured',
+      url: '/featured',
+      icon: 'flash-outline'
     },
     {
-      title: 'Outbox',
-      url: '/folder/Outbox',
-      icon: 'paper-plane'
+      title: 'List',
+      url: '/list',
+      icon: 'reader-outline'
     },
     {
-      title: 'Favorites',
-      url: '/folder/Favorites',
-      icon: 'heart'
+      title: 'Detail',
+      url: '/detail',
+      icon: 'tv-outline'
     },
     {
-      title: 'Archived',
-      url: '/folder/Archived',
-      icon: 'archive'
+      title: 'Facebook',
+      url: '/facebook',
+      icon: 'logo-facebook'
     },
     {
-      title: 'Trash',
-      url: '/folder/Trash',
-      icon: 'trash'
+      title: 'Pinterest',
+      url: '/pinterest',
+      icon: 'logo-pinterest'
     },
     {
-      title: 'Spam',
-      url: '/folder/Spam',
-      icon: 'warning'
+      title: 'Notifications',
+      url: '/notifications',
+      icon: 'notifications-outline'
+    },
+    {
+      title: 'Table',
+      url: '/table',
+      icon: 'grid-outline'
     }
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
   constructor(
     private platform: Platform,
@@ -61,9 +65,9 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    const path = window.location.pathname.split('folder/')[1];
+    const path = window.location.pathname;
     if (path !== undefined) {
-      this.selectedIndex = this.appPages.findIndex(page => page.title.toLowerCase() === path.toLowerCase());
+      this.selectedIndex = this.screenList.findIndex(page => page.title.toLowerCase() === path.toLowerCase());
     }
   }
 }

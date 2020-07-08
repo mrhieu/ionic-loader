@@ -1,0 +1,19 @@
+ion-skeleton-text {
+  line-height: 14px;
+
+  & + ion-skeleton-text {
+    margin-top: 8px;
+  }
+}
+
+.skeleton-rounded {
+  --border-radius: 999em;
+}
+
+.skeleton-sm {
+  line-height: 8px;
+}
+
+.bg-muted {
+  --background: var(--ion-color-light);
+}

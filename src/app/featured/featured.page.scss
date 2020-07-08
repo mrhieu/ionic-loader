@@ -1,0 +1,10 @@
+.skeleton-avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.thumbnail-list {
+  margin-top: var(--ion-grid-column-padding-xs, var(--ion-grid-column-padding, 5px));
+  margin-left: calc(-1 * var(--ion-grid-column-padding-xs, var(--ion-grid-column-padding, 5px)));
+  margin-right: calc(-1 * var(--ion-grid-column-padding-xs, var(--ion-grid-column-padding, 5px)));
+}

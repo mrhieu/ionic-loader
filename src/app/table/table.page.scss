@@ -1,0 +1,9 @@
+ion-row {
+  background-color: #f9f9f9;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  &:nth-child(2n+1) {
+    background-color: #fff;
+  }
+}

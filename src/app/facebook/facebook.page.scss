@@ -1,0 +1,15 @@
+ion-card {
+  margin: 0 0 12px;
+  border-radius: 0;
+}
+
+.list {
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 16px;
+  margin-bottom: 16px;
+
+  ion-skeleton-text {
+    display: inline-block;
+  }
+}
